@@ -33,7 +33,7 @@ public class PersonController {
     }
 
     @PostMapping("/save")
-    public  Person savePerson(Person p){
+    public  @ResponseBody Person savePerson(@RequestBody Person p){
         ps.savePerson(p);
         return p;
     }

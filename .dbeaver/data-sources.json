@@ -1,0 +1,37 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-170c0516b93-56ea59f51010ec6a": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "PostgreSQL - cogdb",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "postgresdb.ch6ydc9fovuz.us-east-1.rds.amazonaws.com",
+				"port": "5432",
+				"database": "cogdb",
+				"url": "jdbc:postgresql://postgresdb.ch6ydc9fovuz.us-east-1.rds.amazonaws.com:5432/cogdb",
+				"home": "PostgreSQL Binaries",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}

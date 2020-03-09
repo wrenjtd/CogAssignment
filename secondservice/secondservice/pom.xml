@@ -8,8 +8,8 @@
 		<version>2.2.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.assignment</groupId>
-	<artifactId>assignment</artifactId>
+	<groupId>com.secondservice</groupId>
+	<artifactId>secondservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
@@ -63,16 +63,6 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-<!-- https://mvnrepository.com/artifact/junit/junit -->
-<dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.12</version>
-    <scope>test</scope>
-</dependency>
-
-
-
 	</dependencies>
 
 	<dependencyManagement>

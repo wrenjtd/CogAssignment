@@ -11,26 +11,29 @@ import java.util.List;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class PersonControllerTests {
-    PersonService ps = new PersonService();
-    Person p;
+
+    @Autowired
+    static PersonService ps = new PersonService();
+    static Person p;
 
     @BeforeAll
-    private void createTestPerson() {
-        this.p = new Person("Ivan", 26);
+    private static void createTestPerson() {
+        p = new Person("Ivan", 26);
         ps.savePerson(p);
     }
 
     @AfterAll
-    private void deleteTestPerson() {
-        ps.deletePerson(this.p);
+    private static void deleteTestPerson() {
+        ps.deletePerson(p);
     }
 
     @Test
     public void testFindByName() {
 
-        String name = this.p.getPerson_name();
+        String name = p.getPerson_name();
 
         Person personToFind = ps.findByName(name);
 
@@ -47,6 +50,6 @@ public class PersonControllerTests {
             people.add(person);
         }
 
-        assertTrue(people.contains(this.p));
+        assertTrue(people.contains(p));
     }
 }
